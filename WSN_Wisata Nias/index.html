@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#11100f">
+    <meta name="description" content="Temukan pantai, air terjun, dan alam menakjubkan di Pulau Nias bersama Niasara.">
+    <title>Niasara — Temukan Alam Nias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark site-nav fixed-top">
+      <div class="container">
+        <a class="navbar-brand brand" href="#beranda" aria-label="Niasara, ke beranda">
+          <span class="brand-mark"><i class="bi bi-compass"></i></span>
+          NIASARA<span class="brand-period">.</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Buka navigasi">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#destinasi">Destinasi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#area">Area</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#komunitas">Komunitas</a></li>
+            <li class="nav-item"><a class="nav-link nav-cta" href="#reservasi">Reservasi <i class="bi bi-arrow-up-right ms-1"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero" id="beranda">
+        <div class="hero-image" role="img" aria-label="Pemandangan pantai tropis dan laut biru"></div>
+        <div class="hero-shade"></div>
+        <div class="container hero-content">
+          <div class="row">
+            <div class="col-lg-8 col-xl-7">
+              <span class="eyebrow"><span class="eyebrow-line"></span> PERMATA DI BARAT INDONESIA</span>
+              <h1>Alam liar.<br><span>Cerita yang</span><br>tak terlupakan.</h1>
+              <p class="hero-copy">Dari ombak kelas dunia hingga air terjun tersembunyi, Nias selalu punya cara untuk membuatmu jatuh cinta.</p>
+              <a class="btn btn-gold" href="#destinasi">Temukan Nias <i class="bi bi-arrow-down-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-foot container">
+          <span><i class="bi bi-geo-alt-fill"></i> Kepulauan Nias, Sumatera Utara</span>
+          <span class="hero-index">01 <span></span> 03</span>
+        </div>
+        <a href="#destinasi" class="scroll-cue" aria-label="Gulir ke destinasi"><i class="bi bi-arrow-down"></i></a>
+      </section>
+
+      <section class="intro-section" id="tentang">
+        <div class="container">
+          <div class="row align-items-end gy-4">
+            <div class="col-lg-7">
+              <span class="section-kicker">LEBIH DEKAT DENGAN ALAM</span>
+              <h2 class="section-title">Ada banyak alasan<br>untuk <span>pergi lebih jauh.</span></h2>
+            </div>
+            <div class="col-lg-5">
+              <p class="intro-copy">Nias bukan sekadar tujuan. Ini adalah pulau dengan pantai yang masih alami, desa penuh tradisi, dan keramahan yang terasa seperti pulang.</p>
+            </div>
+          </div>
+          <div class="stats-row row g-4">
+            <div class="col-6 col-md-3 stat"><strong>5+</strong><span>Pulau utama</span></div>
+            <div class="col-6 col-md-3 stat"><strong>100<span class="stat-plus">+</span></strong><span>Pantai menawan</span></div>
+            <div class="col-6 col-md-3 stat"><strong>365</strong><span>Hari untuk berpetualang</span></div>
+            <div class="col-6 col-md-3 stat"><strong><i class="bi bi-heart-fill"></i></strong><span>Kenangan seumur hidup</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="destinations-section" id="destinasi">
+        <div class="container">
+          <div class="section-heading d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-4">
+            <div>
+              <span class="section-kicker">PILIH PETUALANGANMU</span>
+              <h2 class="section-title">Tempat yang <span>memanggil.</span></h2>
+            </div>
+            <p class="heading-note">Setiap sudut punya cerita.<br>Mana yang ingin kamu temukan?</p>
+          </div>
+
+          <div class="destination-tools">
+            <div class="filter-row d-flex flex-wrap gap-2" role="group" aria-label="Filter kategori destinasi">
+              <button class="filter-btn active" type="button" data-filter="semua" aria-pressed="true">Semua</button>
+              <button class="filter-btn" type="button" data-filter="pantai" aria-pressed="false">Pantai</button>
+              <button class="filter-btn" type="button" data-filter="air-terjun" aria-pressed="false">Air terjun</button>
+              <button class="filter-btn" type="button" data-filter="budaya" aria-pressed="false">Alam & budaya</button>
+            </div>
+            <div class="destination-search">
+              <label class="visually-hidden" for="destinationSearch">Cari destinasi</label>
+              <i class="bi bi-search" aria-hidden="true"></i>
+              <input id="destinationSearch" type="search" placeholder="Cari destinasi..." autocomplete="off">
+            </div>
+            <div class="destination-area">
+              <label class="visually-hidden" for="areaFilter">Pilih area</label>
+              <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              <select id="areaFilter">
+                <option value="semua">Semua area</option>
+                <option value="nias-selatan">Nias Selatan</option>
+                <option value="nias-utara">Nias Utara</option>
+                <option value="nias-barat">Nias Barat</option>
+                <option value="gunungsitoli">Gunungsitoli</option>
+              </select>
+            </div>
+          </div>
+          <p class="result-count" id="destinationCount" aria-live="polite"></p>
+
+          <div class="row g-4 destination-grid" id="destinationGrid">
+            <div class="col-md-6 col-lg-4 destination-item" data-category="pantai" data-area="nias-selatan" data-search="pantai sorake surfing ombak">
+              <article class="destination-card">
+                <div class="destination-image image-sorake">
+                  <span class="image-label"><i class="bi bi-water"></i> PANTAI</span>
+                  <span class="card-number">01</span>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-location"><i class="bi bi-geo-alt"></i> Nias Selatan</div>
+                  <h3>Pantai Sorake</h3>
+                  <p>Ombak legendaris yang mengundang peselancar dari seluruh penjuru dunia.</p>
+                  <div class="destination-actions">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Pantai+Sorake+Nias" target="_blank" rel="noreferrer" class="text-link">Peta <i class="bi bi-arrow-up-right"></i></a>
+                    <button class="text-link destination-book" type="button" data-destination="Pantai Sorake">Rencanakan kunjungan <i class="bi bi-arrow-right"></i></button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 destination-item" data-category="air-terjun" data-area="nias-selatan" data-search="air terjun luaha ndroi alam">
+              <article class="destination-card">
+                <div class="destination-image image-luaha">
+                  <span class="image-label"><i class="bi bi-droplet"></i> AIR TERJUN</span>
+                  <span class="card-number">02</span>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-location"><i class="bi bi-geo-alt"></i> Nias Selatan</div>
+                  <h3>Air Terjun Luaha Ndroi</h3>
+                  <p>Jeda yang menyegarkan di tengah rimbun hijau dan suara alam.</p>
+                  <div class="destination-actions">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Air+Terjun+Luaha+Ndroi+Nias" target="_blank" rel="noreferrer" class="text-link">Peta <i class="bi bi-arrow-up-right"></i></a>
+                    <button class="text-link destination-book" type="button" data-destination="Air Terjun Luaha Ndroi">Rencanakan kunjungan <i class="bi bi-arrow-right"></i></button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 destination-item" data-category="pantai" data-area="nias-utara" data-search="pantai tureloto karang snorkeling">
+              <article class="destination-card">
+                <div class="destination-image image-tureloto">
+                  <span class="image-label"><i class="bi bi-sun"></i> PANTAI</span>
+                  <span class="card-number">03</span>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-location"><i class="bi bi-geo-alt"></i> Nias Utara</div>
+                  <h3>Pantai Tureloto</h3>
+                  <p>Air sebening kaca dan gugusan karang unik di pesisir yang tenang.</p>
+                  <div class="destination-actions">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Pantai+Tureloto+Nias" target="_blank" rel="noreferrer" class="text-link">Peta <i class="bi bi-arrow-up-right"></i></a>
+                    <button class="text-link destination-book" type="button" data-destination="Pantai Tureloto">Rencanakan kunjungan <i class="bi bi-arrow-right"></i></button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 destination-item" data-category="budaya" data-area="nias-selatan" data-search="bawomataluo desa adat lompat batu budaya">
+              <article class="destination-card">
+                <div class="destination-image image-bawomataluo">
+                  <span class="image-label"><i class="bi bi-tree"></i> ALAM & BUDAYA</span>
+                  <span class="card-number">04</span>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-location"><i class="bi bi-geo-alt"></i> Nias Selatan</div>
+                  <h3>Bawömataluo</h3>
+                  <p>Desa di atas bukit dengan rumah adat dan tradisi lompat batu yang ikonis.</p>
+                  <div class="destination-actions">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Desa+Bawomataluo+Nias" target="_blank" rel="noreferrer" class="text-link">Peta <i class="bi bi-arrow-up-right"></i></a>
+                    <button class="text-link destination-book" type="button" data-destination="Bawömataluo">Rencanakan kunjungan <i class="bi bi-arrow-right"></i></button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 destination-item" data-category="pantai" data-area="nias-selatan" data-search="teluk lagundri pantai surfing">
+              <article class="destination-card">
+                <div class="destination-image image-lagundri">
+                  <span class="image-label"><i class="bi bi-water"></i> PANTAI</span>
+                  <span class="card-number">05</span>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-location"><i class="bi bi-geo-alt"></i> Nias Selatan</div>
+                  <h3>Teluk Lagundri</h3>
+                  <p>Garis pantai yang luas, matahari keemasan, dan ombak untuk dikenang.</p>
+                  <div class="destination-actions">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Teluk+Lagundri+Nias" target="_blank" rel="noreferrer" class="text-link">Peta <i class="bi bi-arrow-up-right"></i></a>
+                    <button class="text-link destination-book" type="button" data-destination="Teluk Lagundri">Rencanakan kunjungan <i class="bi bi-arrow-right"></i></button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 destination-item" data-category="air-terjun" data-area="nias-barat" data-search="air terjun sihareo alam">
+              <article class="destination-card">
+                <div class="destination-image image-sihare">
+                  <span class="image-label"><i class="bi bi-droplet"></i> AIR TERJUN</span>
+                  <span class="card-number">06</span>
+                </div>
+                <div class="destination-info">
+                  <div class="destination-location"><i class="bi bi-geo-alt"></i> Nias</div>
+                  <h3>Air Terjun Sihare'ö</h3>
+                  <p>Temukan sisi Nias yang lebih hening, dikelilingi alam yang masih asri.</p>
+                  <div class="destination-actions">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Air+Terjun+Nias" target="_blank" rel="noreferrer" class="text-link">Peta <i class="bi bi-arrow-up-right"></i></a>
+                    <button class="text-link destination-book" type="button" data-destination="Air Terjun Sihare'ö">Rencanakan kunjungan <i class="bi bi-arrow-right"></i></button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <p class="empty-state" hidden>Belum ada destinasi untuk kategori ini.</p>
+        </div>
+      </section>
+
+      <section class="areas-section" id="area">
+        <div class="container">
+          <div class="section-heading d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-4">
+            <div>
+              <span class="section-kicker">JELAJAHI KEPULAUAN</span>
+              <h2 class="section-title">Setiap area punya <span>cerita.</span></h2>
+            </div>
+            <p class="heading-note">Pilih wilayah untuk menemukan destinasi<br>dan merencanakan perjalananmu.</p>
+          </div>
+          <div class="row g-3">
+            <div class="col-sm-6 col-lg-3">
+              <article class="area-card">
+                <span class="area-number">01</span>
+                <i class="bi bi-water area-icon"></i>
+                <h3>Nias Selatan</h3>
+                <p>Pantai Sorake, Teluk Lagundri, dan desa adat Bawömataluo.</p>
+                <button class="area-link area-explore" type="button" data-area="nias-selatan">Lihat destinasi <i class="bi bi-arrow-right"></i></button>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="area-card">
+                <span class="area-number">02</span>
+                <i class="bi bi-sun area-icon"></i>
+                <h3>Nias Utara</h3>
+                <p>Jelajahi garis pantai utara dan perairan di sekitar Tureloto.</p>
+                <button class="area-link area-explore" type="button" data-area="nias-utara">Lihat destinasi <i class="bi bi-arrow-right"></i></button>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="area-card">
+                <span class="area-number">03</span>
+                <i class="bi bi-compass area-icon"></i>
+                <h3>Nias Barat</h3>
+                <p>Temukan suasana alam yang tenang dan air terjun di wilayah barat.</p>
+                <button class="area-link area-explore" type="button" data-area="nias-barat">Lihat destinasi <i class="bi bi-arrow-right"></i></button>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="area-card">
+                <span class="area-number">04</span>
+                <i class="bi bi-buildings area-icon"></i>
+                <h3>Gunungsitoli</h3>
+                <p>Jadikan kota ini titik awal untuk mengenal kehidupan di Nias.</p>
+                <button class="area-link area-explore" type="button" data-area="gunungsitoli">Lihat destinasi <i class="bi bi-arrow-right"></i></button>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section" id="services">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-kicker">TEMANI PERJALANANMU</span>
+            <h2 class="section-title">Services untuk perjalanan <span>lebih mudah.</span></h2>
+            <p class="section-description">Pilih bantuan perjalanan yang kamu perlukan. Ketersediaan dan biaya dikonfirmasi langsung sebelum reservasi.</p>
+          </div>
+          <div class="row g-3">
+            <div class="col-sm-6 col-lg-3">
+              <article class="service-card">
+                <i class="bi bi-person-walking service-icon"></i>
+                <h3>Pemandu lokal</h3>
+                <p>Temani eksplorasi dan bantu mengenal area tujuan.</p>
+                <button class="service-link service-book" type="button" data-service="Pemandu lokal">Tanyakan layanan <i class="bi bi-arrow-right"></i></button>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="service-card">
+                <i class="bi bi-car-front service-icon"></i>
+                <h3>Transportasi</h3>
+                <p>Diskusikan kebutuhan perjalanan antarlokasi di Nias.</p>
+                <button class="service-link service-book" type="button" data-service="Transportasi">Tanyakan layanan <i class="bi bi-arrow-right"></i></button>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="service-card">
+                <i class="bi bi-house-heart service-icon"></i>
+                <h3>Akomodasi</h3>
+                <p>Minta rekomendasi tempat menginap sesuai rencana perjalanan.</p>
+                <button class="service-link service-book" type="button" data-service="Akomodasi">Tanyakan layanan <i class="bi bi-arrow-right"></i></button>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="service-card">
+                <i class="bi bi-water service-icon"></i>
+                <h3>Aktivitas alam</h3>
+                <p>Rencanakan aktivitas pantai, jelajah alam, atau kunjungan budaya.</p>
+                <button class="service-link service-book" type="button" data-service="Aktivitas alam">Tanyakan layanan <i class="bi bi-arrow-right"></i></button>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="community-section" id="komunitas">
+        <div class="container">
+          <div class="community-panel row g-0 align-items-stretch">
+            <div class="col-lg-6 community-photo" role="img" aria-label="Suasana alam di desa tropis"></div>
+            <div class="col-lg-6 community-content">
+              <span class="section-kicker">LOCAL COMMUNITIES</span>
+              <h2 class="section-title">Perjalanan yang menghargai <span>tuan rumah.</span></h2>
+              <p>Kenali Nias dengan sikap terbuka dan hormat. Saat berkunjung ke desa atau mengikuti kegiatan budaya, mintalah izin sebelum memotret, ikuti arahan warga, dan dukung usaha lokal.</p>
+              <ul class="community-values">
+                <li><i class="bi bi-check2"></i> Hormati adat dan aturan setempat</li>
+                <li><i class="bi bi-check2"></i> Pilih produk dan jasa dari warga lokal</li>
+                <li><i class="bi bi-check2"></i> Jaga kebersihan alam dan ruang bersama</li>
+              </ul>
+              <a class="btn btn-gold" href="#reservasi">Rencanakan kunjungan <i class="bi bi-arrow-up-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reservation-section" id="reservasi">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-5 reservation-intro">
+              <span class="section-kicker">MULAI RENCANAKAN</span>
+              <h2 class="section-title">Ceritakan rencana <span>perjalananmu.</span></h2>
+              <p>Isi formulir ini untuk menyiapkan pesan permintaan reservasi. Kamu akan diarahkan ke WhatsApp untuk memilih kontak penyedia layanan dan mengirim pesan.</p>
+              <div class="reservation-note"><i class="bi bi-info-circle"></i><span>Permintaan belum menjadi reservasi terkonfirmasi. Jadwal, ketersediaan, dan biaya perlu dikonfirmasi langsung oleh penyedia.</span></div>
+            </div>
+            <div class="col-lg-7">
+              <form class="reservation-form" id="reservationForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="guestName">Nama lengkap</label>
+                    <input id="guestName" name="name" type="text" autocomplete="name" required maxlength="80" placeholder="Nama kamu">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="guestContact">Nomor WhatsApp</label>
+                    <input id="guestContact" name="contact" type="tel" autocomplete="tel" required maxlength="24" placeholder="+62 812 3456 7890">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="tripDate">Tanggal kunjungan</label>
+                    <input id="tripDate" name="date" type="date" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="guestCount">Jumlah wisatawan</label>
+                    <input id="guestCount" name="guests" type="number" min="1" max="30" value="2" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="reservationArea">Area tujuan</label>
+                    <select id="reservationArea" name="area" required>
+                      <option value="">Pilih area</option>
+                      <option value="nias-selatan">Nias Selatan</option>
+                      <option value="nias-utara">Nias Utara</option>
+                      <option value="nias-barat">Nias Barat</option>
+                      <option value="gunungsitoli">Gunungsitoli</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="reservationDestination">Destinasi</label>
+                    <select id="reservationDestination" name="destination">
+                      <option value="">Belum ditentukan</option>
+                      <option>Pantai Sorake</option>
+                      <option>Air Terjun Luaha Ndroi</option>
+                      <option>Pantai Tureloto</option>
+                      <option>Bawömataluo</option>
+                      <option>Teluk Lagundri</option>
+                      <option>Air Terjun Sihare'ö</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="reservationService">Layanan yang diminati</label>
+                    <select id="reservationService" name="service" required>
+                      <option value="">Pilih layanan</option>
+                      <option>Pemandu lokal</option>
+                      <option>Transportasi</option>
+                      <option>Akomodasi</option>
+                      <option>Aktivitas alam</option>
+                      <option>Paket perjalanan</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="reservationNotes">Catatan tambahan <span>(opsional)</span></label>
+                    <textarea id="reservationNotes" name="notes" rows="3" maxlength="500" placeholder="Ceritakan kebutuhan atau pertanyaanmu"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-gold reservation-submit" type="submit">Siapkan pesan reservasi <i class="bi bi-whatsapp ms-2"></i></button>
+                  </div>
+                </div>
+                <div class="reservation-feedback" id="reservationFeedback" role="status" aria-live="polite" hidden></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing-banner">
+        <div class="closing-image"></div>
+        <div class="closing-overlay"></div>
+        <div class="container closing-content">
+          <span class="section-kicker">PULAU NIAS MENUNGGU</span>
+          <h2>Petualangan terbaik<br>dimulai dari <span>langkah pertama.</span></h2>
+          <a class="btn btn-gold" href="#destinasi">Cari inspirasimu <i class="bi bi-arrow-up-right ms-2"></i></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+        <a class="navbar-brand brand" href="#beranda"><span class="brand-mark"><i class="bi bi-compass"></i></span> NIASARA<span class="brand-period">.</span></a>
+        <p class="footer-copy mb-0">Temukan alam, bawa pulang ceritanya. <span>© <span id="currentYear"></span> Niasara.</span></p>
+        <a href="#beranda" class="back-top">Kembali ke atas <i class="bi bi-arrow-up"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
